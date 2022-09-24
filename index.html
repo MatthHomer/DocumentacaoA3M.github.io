@@ -18,7 +18,7 @@
 </head>
 
 <!--Início das Referências-->
-<body uk-align-left@s>
+<body uk-align-left@s style="width:100%;">
     <div>
         <!-- MENU DA PÁGINA -->
         <nav class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
@@ -38,15 +38,17 @@
                     </div>
             </div>
         </nav> 
-        
-<div style="max-width: 1560px">     
 
-        <!-- BARRA DE NAVEGAÇÃO LATERAL -->
+<div>
+    <!-- Voltar ao Topo -->
+    <a href="#" uk-scroll="offset:80" style="z-index: 3; position: fixed; right: 20px; width: 45px; background-color: #2051b5; border-radius: 60px; bottom: 12px; box-shadow: 2px 3px 19px -2px rgba(13, 40, 215, 0.75); color: #f4f4f4; cursor: pointer; height: 40px; content: '▲'; display: flex; justify-content: center; padding-left: 1px; padding-top: 10px; "> ▲ </a> 
+        
+    <!-- BARRA DE NAVEGAÇÃO LATERAL -->
         <div class="uk-container">   
             <div id="offcanvas-nav" uk-offcanvas="mode: push" bg-close="false" uk-offcanvas="hide: false" esc-close="true" overlay="false">
                 <div class="uk-offcanvas-bar">
                     <div>
-                        <img src="Imagens A3M/Imagens Index/Analitica3MSidebar.png" style="background-size: 20px;"> </img>
+                        <img src="Imagens A3M/Imagens Index/Analitica3MSidebar.png" style="background-size: 20px; max-width:270px; max-height:100px ;"> </img>
                     </div>     
                     <div style = "margin: 10px;" >
                         <ul class="uk-nav-default" uk-nav>
@@ -55,7 +57,7 @@
                             <li class="uk-parent">
                                 <a style = "margin-top: 10px;">USUÁRIOS E GRUPOS DE PERMISSÃO</a>
                                 <ul class="uk-nav-sub">
-                                    <li><a href="#ConfiguracaoPermissoes" uk-scroll="offset:80"="offset:80">CONFIGURAÇÃO DE PERMISSÕES</a></li>
+                                    <li><a href="#ConfiguracaoPermissoes" uk-scroll="offset:80">CONFIGURAÇÃO DE PERMISSÕES</a></li>
                                         <ul>
                                             <li><a href="#CriandoGrupoPermissao" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
                                             <li><a href="#EditarPermissao" uk-scroll="offset:80">Editando um Grupo de Permissão</a></li>
@@ -99,7 +101,7 @@
         </div>
         
 <!--Fim das Referências-->
-<div style="padding-left: 40px;">
+<div style="padding-left: 40px; max-width: 1500px;">
     <!-- <a id="Menu" href="" uk-totop></a> -->
     <!-- TEXTO COM PRIMEIRO TÓPICO -->
         <div class="uk-container" > </div>
@@ -261,7 +263,7 @@
         </div>
         
         <div>
-            <h4 id="RhCadEditExc">
+            <h4 id="RhCadEditExc"> 
                 CADASTRANDO, EDITANDO OU EXCLUINDO OPÇÕES
             </h4>
                     <img src="Imagens A3M\Imagens Index\CADASTRANDO, EDITANDO OU EXCLUINDO OPÇÕES.png"> </img>
@@ -397,7 +399,7 @@
         </div>
     </div>
 </div>
-</div>
+</>
 
 </body>
 
