@@ -59,53 +59,76 @@
                     </div>     
                     <div style = "margin: 10px;" >
                         <ul class="uk-nav-default" uk-nav>
-                            <li class="uk-active"><a href="#">SUMÁRIO</a></li>
+                            <div style="padding-top: 20px;">
+                                <span style="padding-left: 30px; border-top: 10px; font-weight: bolder;">
+                                    SUMÁRIO A3M
+                                </span>
+                            </div>                           
+                                <li class="uk-parent">
+                                    <a style = "margin-top: 10px;">USUÁRIOS E GRUPOS DE PERMISSÃO</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#ConfiguracaoPermissoes" uk-scroll="offset:80">CONFIGURAÇÃO DE PERMISSÕES</a></li>
+                                            <ul>
+                                                <li><a href="#CriandoGrupoPermissao" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
+                                                <li><a href="#EditarPermissao" uk-scroll="offset:80">Editando um Grupo de Permissão</a></li>
+                                            </ul>
+
+                                        <li> <a href="#ConfiguracaoUsuario" uk-scroll="offset:80" style = "margin-top: 10px;"  >CONFIGURAÇÃO DOS USUÁRIOS</a></li>
+                                            <ul>
+                                                <li><a href="#CriandoNovoUsuario" uk-scroll="offset:80">Criando um Novo Usuário</a></li>
+                                                <li><a href="#MaisdeUmGrupo" uk-scroll="offset:80">Mais de um Grupo de Permissão</a></li>
+                                                <li><a href="#EditandoUmUsuario" uk-scroll="offset:80">Editando um Usuário</a></li>
+                                                <li><a href="#EditandoSeu" uk-scroll="offset:80">Editando o Seu Usuário</a></li>
+                                            </ul>
+
+                                        <li> <a href="#" uk-scroll="offset:80" style = "margin-top: 10px;"  >CADASTRO DE ROTINA</a></li>
+                                            <ul>    
+                                                <li><a href="#" uk-scroll="offset:80">Cadastra uma Rotina</a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
+
                             
-                            <li class="uk-parent">
-                                <a style = "margin-top: 10px;">USUÁRIOS E GRUPOS DE PERMISSÃO</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#ConfiguracaoPermissoes" uk-scroll="offset:80">CONFIGURAÇÃO DE PERMISSÕES</a></li>
+                                <li class="uk-parent">
+                                    <a href="#ControleDeFuncionarios" uk-scroll="offset:80">CONTROLE DE FUNCIONÁRIOS - Menu RH</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#RhCadastros" uk-scroll="offset:80">RH CADASTROS</a></li>
                                         <ul>
-                                            <li><a href="#CriandoGrupoPermissao" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
-                                            <li><a href="#EditarPermissao" uk-scroll="offset:80">Editando um Grupo de Permissão</a></li>
+                                                <li><a href="#RhCadEditExc" uk-scroll="offset:80">Cadastro, Edição ou Exclusão de Opções</a></li>
+                                                <li><a href="#CadastroEndereço" uk-scroll="offset:80">Cadastro de Endereço</a></li>
+                                            </ul>
+                                            <li><a style = "margin-top: 10px;" href="#RhConfig" uk-scroll="offset:80">RH CONFIGURAÇÕES</a></li>
+                                            <ul>
+                                                <li><a href="#Funcionarios" uk-scroll="offset:80">Funcionários</a></li>
+                                                <li><a href="#DadosPessoais"uk-scroll="offset:80">Dados Pessoais</a></li>
+                                                <li><a href="#EnderecoRH"uk-scroll="offset:80">Endereço</a></li>
+                                                <li><a href="#Atribuicao"uk-scroll="offset:80">Atribuição</a></li>
+                                                <li><a href="#FeriasFolgas"uk-scroll="offset:80">Férias e Folgas</a></li>
+                                                <li><a href="#Ferias" uk-scroll="offset:80">Férias</a></li>
+                                                <li><a href="#Folgas" uk-scroll="offset:80">Folgas</a></li>
+                                                <li><a href="#ReservaFerias" uk-scroll="offset:80">Reserva de folgas</a></li>
+                                            </ul>
                                         </ul>
-                                    <li> <a href="#ConfiguracaoUsuario" uk-scroll="offset:80" style = "margin-top: 10px;"  >CONFIGURAÇÃO DOS USUÁRIOS</a></li>
-                                        <ul>
-                                            <li><a href="#CriandoNovoUsuario" uk-scroll="offset:80">Criando um Novo Usuário</a></li>
-                                            <li><a href="#MaisdeUmGrupo" uk-scroll="offset:80">Mais de um Grupo de Permissão</a></li>
-                                            <li><a href="#EditandoUmUsuario" uk-scroll="offset:80">Editando um Usuário</a></li>
-                                            <li><a href="#EditandoSeu" uk-scroll="offset:80">Editando o Seu Usuário</a></li>
-                                        </ul>
+                                </li>
 
-                                </ul>
-                            </li>
-                            <li class="uk-parent">
-                                <a href="#ControleDeFuncionarios" uk-scroll="offset:80">CONTROLE DE FUNCIONÁRIOS - Menu RH</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#RhCadastros" uk-scroll="offset:80">RH CADASTROS</a></li>
-                                        <ul>
-                                            <li><a href="#RhCadEditExc" uk-scroll="offset:80">Cadastro, Edição ou Exclusão de Opções</a></li>
-                                            <li><a href="#CadastroEndereço" uk-scroll="offset:80">Cadastro de Endereço</a></li>
-                                        </ul>
-                                    <li><a style = "margin-top: 10px;" href="#RhConfig" uk-scroll="offset:80">RH CONFIGURAÇÕES</a></li>
-                                        <ul>
-                                            <li><a href="#Funcionarios" uk-scroll="offset:80">Funcionários</a></li>
-                                            <li><a href="#DadosPessoais"uk-scroll="offset:80">Dados Pessoais</a></li>
-                                            <li><a href="#EnderecoRH"uk-scroll="offset:80">Endereço</a></li>
-                                            <li><a href="#Atribuicao"uk-scroll="offset:80">Atribuição</a></li>
-                                            <li><a href="#FeriasFolgas"uk-scroll="offset:80">Férias e Folgas</a></li>
-                                            <li><a href="#Ferias" uk-scroll="offset:80">Férias</a></li>
-                                            <li><a href="#Folgas" uk-scroll="offset:80">Folgas</a></li>
-                                            <li><a href="#ReservaFerias" uk-scroll="offset:80">Reserva de folgas</a></li>
-                                        </ul>
-
-                                </ul>
-                            </li>
+                                <li class="uk-parent">
+                                    <a>CADASTRO DE ROTINAS</a>
+                                    <ul class="uk-nav-sub">
+                                        <li>
+                                            <a href="#" uk-scroll="offset:80">CADASTRO DE ROTINAS</a>
+                                        </li>
+                                            <ul>
+                                                <li><a href="#" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
                         </ul>
+                            
                     </div>
                 </div>
             </div>
         </div>
+
 <!--Fim das Referências-->
 
 <div style="padding-left: 40px; max-width: 1500px;">
