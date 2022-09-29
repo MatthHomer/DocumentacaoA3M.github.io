@@ -58,7 +58,7 @@
                         <img src="Imagens A3M/Imagens Index/Analitica3MSidebar.png" style="background-size: 20px; max-width:270px; max-height:100px ;"> </img>
                     </div>     
                     <div style = "margin: 10px;" >
-                        <ul class="uk-nav-default" uk-nav>
+                        <ul class="uk-nav-default" uk-nav>  
                             <div style="padding-top: 20px;">
                                 <span style="padding-left: 30px; border-top: 10px; font-weight: bolder;">
                                     SUMÁRIO A3M
@@ -99,7 +99,7 @@
                                             </ul>
                                             <li><a style = "margin-top: 10px;" href="#RhConfig" uk-scroll="offset:80">RH CONFIGURAÇÕES</a></li>
                                             <ul>
-                                                <li><a href="#Funcionarios" uk-scroll="offset:80">Funcionários</a></li>
+                                                <li><a href="#Funcionarios" uk-scroll="#Funcionarios">Funcionários</a></li>
                                                 <li><a href="#DadosPessoais"uk-scroll="offset:80">Dados Pessoais</a></li>
                                                 <li><a href="#EnderecoRH"uk-scroll="offset:80">Endereço</a></li>
                                                 <li><a href="#Atribuicao"uk-scroll="offset:80">Atribuição</a></li>
@@ -112,13 +112,13 @@
                                 </li>
 
                                 <li class="uk-parent">
-                                    <a>CADASTRO DE ROTINAS</a>
+                                    <a>ROTINAS DO SISTEMA</a>
                                     <ul class="uk-nav-sub">
                                         <li>
                                             <a href="#" uk-scroll="offset:80">CADASTRO DE ROTINAS</a>
                                         </li>
                                             <ul>
-                                                <li><a href="#" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
+                                                <li><a href="#" uk-scroll="offset:80">Criando e Configurando uma Rotina</a></li>
                                             </ul>
                                     </ul>
                                 </li>
@@ -137,10 +137,14 @@
         <div class="uk-container" > </div>
             <div>
                 <div class="Container">
-                        <article class="docs-article" id="Seção-1">
-                            <h2 style="font-weight: bolder; padding-left: 35%; padding-top: 10px;" class="docs-heading;">USUÁRIOS E GRUPOS DE PERMISSÕES</h2>
-                            <p style="font-size:large;" style="font-family: bold;"> Última Atualização: 23/07/2022 </p>
-                        </article>
+                        <div class="uk-flex;" id="Seção-1">
+                            <div class="uk-flex-center;">
+                                <h3 style="font-weight: bolder;">USUÁRIOS E GRUPOS DE PERMISSÕES</h3>
+                            </div>
+                            <div class="uk-flex-left;">
+                                <p style="font-size:large; font-family: bold;"> Última Atualização: 23/07/2022 </p>
+                            </div>
+                        </div>
                         <section class="docs-intro">
                             <p style="font-size:large;"> Para autorizar os colaboradores a utilizarem o sistema de BI da Analítica3M, o processo, contempla 2 etapas: </p>
                             <ul> 1) a configuração das permissões; e </ul>
