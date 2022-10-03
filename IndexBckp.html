@@ -1,29 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A3M</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <!-- BootStrap -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>            
     <!-- UIkit CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/css/uikit.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" href="style.css" media="screen" /> -->
-
-
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <link rel="stylesheet" href="Home.html">
     <!-- UIkit JS -->
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.8/dist/js/uikit-icons.min.js"></script>
     <script src="uikit/dist/js/uikit-icons.min.js"></script>
+    <!-- <link rel="stylesheet" href="Documentação v1.0/UiKit.js"> -->
+    
+
 </head>
 
 <!--Início das Referências-->
-<body>
+<body uk-align-left@s style="width:100%;">
     <div>
         <!-- MENU DA PÁGINA -->
         <nav class="uk-navbar uk-navbar-container uk-margin" uk-sticky>
             <div class="uk-navbar-center">
                 <div class="uk-container ">
-                    <strong style="font-size:xx-large">
+                    <strong style="font-size:xx-large"> 
                         Manual de Usuário do A3M System
                     </strong>
                 </div>
@@ -31,155 +38,188 @@
 
             <div class="uk-navbar-left">
                     <div class="uk-container">
+                        <a href="Home.html" uk-icon="home" style="position: absolute; right: 20px; padding-top: 30px; "></a> <a href="Home.html" style="position: absolute;right:45px; padding-top: 28px;" class="uk-margin-small-left">Home</a>
                         <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav">
-                        <!-- <a class="uk-navbar-toggle" uk-toggle="target: #offcanvas-nav"> -->
-                            <span uk-navbar-toggle-icon></span> <span class="uk-margin-small-left">Menu</span>
+                            <span uk-navbar-toggle-icon></spa> <span class="uk-margin-small-left">Menu</span>
                         </a>
                     </div>
             </div>
         </nav> 
 
-        <!-- BARRA DE NAVEGAÇÃO LATERAL -->
+<div>
+    <!-- VOLTAR AO TOPO -->
+    <a href="#" uk-scroll="offset:80" style="z-index: 3; position: fixed; right: 20px; width: 45px; background-color: #2051b5; border-radius: 60px; bottom: 12px; box-shadow: 2px 3px 19px -2px rgba(13, 40, 215, 0.75); color: #f4f4f4; cursor: pointer; height: 40px; content: '▲'; display: flex; justify-content: center; padding-left: 1px; padding-top: 10px; "> ▲ </a> 
+        
+    <!-- BARRA DE NAVEGAÇÃO LATERAL -->
         <div class="uk-container">   
-            <div id="offcanvas-nav" uk-offcanvas="mode: push" bg-close="false">     
+            <div id="offcanvas-nav" uk-offcanvas="mode: push; bg-close:false; esc-close:true; overlay:false; close:false">
                 <div class="uk-offcanvas-bar">
-                    <div style="background-color: #000e4a; text-align:center; line-height:40px; width: 100%; height:40px; margin: 0px; padding: 0px;">
-                        <strong style="color: white;">Manual de Usuário do A3M System</strong>
-                    </div>
+                    <div>
+                        <img src="Imagens A3M/Imagens Index/Analitica3MSidebar.png" style="background-size: 20px; max-width:270px; max-height:100px ;"> </img>
+                    </div>     
                     <div style = "margin: 10px;" >
-                        <ul class="uk-nav-default" uk-nav>
-                            <li class="uk-active"><a href="#">SUMÁRIO</a></li>
+                        <ul class="uk-nav-default" uk-nav>  
+                            <div style="padding-top: 20px;">
+                                <span style="padding-left: 30px; border-top: 10px; font-weight: bolder;">
+                                    SUMÁRIO A3M
+                                </span>
+                            </div>                           
+                                <li class="uk-parent">
+                                    <a style = "margin-top: 10px;">USUÁRIOS E GRUPOS DE PERMISSÃO</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#ConfiguracaoPermissoes" uk-scroll="offset:80">CONFIGURAÇÃO DE PERMISSÕES</a></li>
+                                            <ul>
+                                                <li><a href="#CriandoGrupoPermissao" uk-scroll="offset:80">Criando um Grupo de Permissão</a></li>
+                                                <li><a href="#EditarPermissao" uk-scroll="offset:80">Editando um Grupo de Permissão</a></li>
+                                            </ul>
+
+                                        <li> <a href="#ConfiguracaoUsuario" uk-scroll="offset:80" style = "margin-top: 10px;"  >CONFIGURAÇÃO DOS USUÁRIOS</a></li>
+                                            <ul>
+                                                <li><a href="#CriandoNovoUsuario" uk-scroll="offset:80">Criando um Novo Usuário</a></li>
+                                                <li><a href="#MaisdeUmGrupo" uk-scroll="offset:80">Mais de um Grupo de Permissão</a></li>
+                                                <li><a href="#EditandoUmUsuario" uk-scroll="offset:80">Editando um Usuário</a></li>
+                                                <li><a href="#EditandoSeu" uk-scroll="offset:80">Editando o Seu Usuário</a></li>
+                                            </ul>
+
+                                        <li> <a href="#" uk-scroll="offset:80" style = "margin-top: 10px;"  >CADASTRO DE ROTINA</a></li>
+                                            <ul>    
+                                                <li><a href="#" uk-scroll="offset:80">Cadastra uma Rotina</a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
+
                             
-                            <li class="uk-parent">
-                                <a style = "margin-top: 10px;" href="#">USUÁRIOS E GRUPOS DE PERMISSÃO</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#ConfiguracaoPermissoes">CONFIGURAÇÃO DE PERMISSÕES</a></li>
+                                <li class="uk-parent">
+                                    <a href="#ControleDeFuncionarios" uk-scroll="offset:80">CONTROLE DE FUNCIONÁRIOS - Menu RH</a>
+                                    <ul class="uk-nav-sub">
+                                        <li><a href="#RhCadastros" uk-scroll="offset:80">RH CADASTROS</a></li>
                                         <ul>
-                                            <li><a href="#">Criando um Grupo de Permissão</a></li>
-                                            <li><a href="#">Editando um Grupo de Permissão</a></li>
+                                                <li><a href="#RhCadEditExc" uk-scroll="offset:80">Cadastro, Edição ou Exclusão de Opções</a></li>
+                                                <li><a href="#CadastroEndereço" uk-scroll="offset:80">Cadastro de Endereço</a></li>
+                                            </ul>
+                                            <li><a style = "margin-top: 10px;" href="#RhConfig" uk-scroll="offset:80">RH CONFIGURAÇÕES</a></li>
+                                            <ul>
+                                                <li><a href="#Funcionarios" uk-scroll="#Funcionarios">Funcionários</a></li>
+                                                <li><a href="#DadosPessoais"uk-scroll="offset:80">Dados Pessoais</a></li>
+                                                <li><a href="#EnderecoRH"uk-scroll="offset:80">Endereço</a></li>
+                                                <li><a href="#Atribuicao"uk-scroll="offset:80">Atribuição</a></li>
+                                                <li><a href="#FeriasFolgas"uk-scroll="offset:80">Férias e Folgas</a></li>
+                                                <li><a href="#Ferias" uk-scroll="offset:80">Férias</a></li>
+                                                <li><a href="#Folgas" uk-scroll="offset:80">Folgas</a></li>
+                                                <li><a href="#ReservaFerias" uk-scroll="offset:80">Reserva de folgas</a></li>
+                                            </ul>
                                         </ul>
-                                    <li> <a style = "margin-top: 10px;" href="#">CONFIGURAÇÃO DOS USUÁRIOS</a></li>
-                                        <ul>
-                                            <li><a href="#">Criando um Novo Usuário</a></li>
-                                            <li><a href="#">Mais de um Grupo de Permissão</a></li>
-                                            <li><a href="#">Editando um Usuário</a></li>
-                                            <li><a href="#">Editando o Seu Salário</a></li>
-                                        </ul>
+                                </li>
 
-                                </ul>
-                            </li>
-                            <li class="uk-parent">
-                                <a href="#">CONTROLE DE FUNCIONÁRIOS - Menu RH</a>
-                                <ul class="uk-nav-sub">
-                                    <li><a href="#RhCadastros" >RH CADASTROS</a></li>
-                                        <ul>
-                                            <li><a href="#">Cadastro, Edição ou Exclusão de Opções</a></li>
-                                            <li><a href="#">Cadastro de Endereço</a></li>
-                                        </ul>
-                                    <li><a style = "margin-top: 10px;" href="#">RH CONFIGURAÇÕES</a></li>
-                                        <ul>
-                                            <li><a href="#">Funcionários</a></li>
-                                            <li><a href="#">Dados Pessoais</a></li>
-                                            <li><a href="#">Endereço</a></li>
-                                            <li><a href="#">Atribuição</a></li>
-                                            <li><a href="#">Férias e Folgas</a></li>
-                                            <li><a href="#">Férias</a></li>
-                                            <li><a href="#">Folgas</a></li>
-                                            <li><a href="#">Reserva de folgas</a></li>
-                                        </ul>
-
-                                </ul>
-                            </li>
+                                <li class="uk-parent">
+                                    <a>ROTINAS DO SISTEMA</a>
+                                    <ul class="uk-nav-sub">
+                                        <li>
+                                            <a href="#" uk-scroll="offset:80">CADASTRO DE ROTINAS</a>
+                                        </li>
+                                            <ul>
+                                                <li><a href="#" uk-scroll="offset:80">Criando e Configurando uma Rotina</a></li>
+                                            </ul>
+                                    </ul>
+                                </li>
                         </ul>
+                            
                     </div>
                 </div>
             </div>
-        
+        </div>
+
 <!--Fim das Referências-->
-<div>
-    <!-- <a id="Menu" href="" uk-totop></a> -->
+
+<div style="padding-left: 40px; max-width: 1500px;">
+
     <!-- TEXTO COM PRIMEIRO TÓPICO -->
-        <div class="uk-container"> </div>
+        <div class="uk-container" > </div>
             <div>
                 <div class="Container">
-                    <article class="docs-article" id="Seção-1">
-                        <h2 class="docs-heading">USUÁRIOS E GRUPOS DE PERMISSÕES <span class="docs-time"> </span> </h2>
-                        <p> Última Atualização: 23/07/2022 </p>
-                    <section class="docs-intro">
-                        <p> Para autorizar os colaboradores a utilizarem o sistema de BI da Analítica3M, o processo, contempla 2 etapas: </p>
-                        <ul> 1) a configuração das permissões; e </ul>
-                        <ul> 2) a configuração dos usuários. </ul>
-                        <p>	Estes campos são acessíveis através do menu Configuração > Usuários. </p> 
-                        <p> Vejamos primeiro o Cadastro de Permissões:</p>		
-                    </section>
-            <div class="Cadastro Permissões">
-                <div class="Cadastro Permissões">
-                    <img src="Imagens A3M\Cadastro de Permissões.png" class = "Imagens"> </img>
+                        <div class="uk-flex;" id="Seção-1">
+                            <div class="uk-flex-center;">
+                                <h3 style="font-weight: bolder;">USUÁRIOS E GRUPOS DE PERMISSÕES</h3>
+                            </div>
+                            <div class="uk-flex-left;">
+                                <p style="font-size:large; font-family: bold;"> Última Atualização: 30/07/2022 </p>
+                            </div>
+                        </div>
+                        <section class="docs-intro">
+                            <p style="font-size:large;"> Para autorizar os colaboradores a utilizarem o sistema de BI da Analítica3M, o processo, contempla 2 etapas: </p>
+                            <ul> 1) a configuração das permissões; e </ul>
+                            <ul> 2) a configuração dos usuários. </ul>
+                            <p style="font-size:large;">	Estes campos são acessíveis através do menu Configuração > Usuários. </p> 
+                            <p style="font-size:large;"> Vejamos primeiro o Cadastro de Permissões:</p>		
+                        </section>
+                    <div class="Cadastro Permissões">
+                        <div class="Cadastro Permissões">
+                            <img src="Imagens A3M\Imagens Index\Cadastro de Permissões.png" class = "Imagens"> </img>
+                        </div>
+                    </div>
                 </div>
-        </div>	
+            </div>	
         
         <div style="margin-top: 20px;" >
             <section id = "ConfiguracaoPermissoes">
-                <h2>
+                <h3 style="font-weight: bolder;">
                     Configuração de Permissões
-                </h2>
+                </h3>
             </section>
-                <P>
+                <P style="font-size:large;">
                     Através do Gerenciador de Permissões, elaboramos os grupos de permissões que servirão
                     para liberar as telas ao usuário.
                 </P>
             <div class = "Sub">
-                <p>
-                    <h3>
+                <p style="font-size:large;">
+                    <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="CriandoGrupoPermissao">
                         CRIANDO UM GRUPO DE PERMISSÃO
-                    </h3>
+                    </h4>
             </div>
-                    Ao clicar no <span class="fa fa-plus-circle" style="font-size:30px; color:#000e4a;"::before></span> final da tela, você conseguirá criar um Novo Grupo. Neste primeiro momento só é necessário Colocar o Nome do Grupo e clicar em Cadastrar.
+                    Ao clicar no <span class="fa fa-plus-circle" style="font-size:30px; color:#000e4a;"::before></span> ao   final da tela, você conseguirá criar um Novo Grupo. Neste primeiro momento só é necessário Colocar o Nome do Grupo e clicar em Cadastrar.
                 </p>    
-            <img src = "Imagens A3M\Cadastro de Permissões.png" class = "Imagens" > </img>
+            <img src = "Imagens A3M\Imagens Index\Cadastro permissao.png" class = "Imagens" > </img>
         </div>
         
         <div>
-            <p>
+            <p style="font-size:large;">
                 Após criar o Grupo, basta acessá-lo para configurar as telas que este grupo poderá ter acesso. Na imagem de exemplo, a criação do Grupo de Permissão Atendimento no qual estão sendo selecionadas as telas de Atendimento:
             </p>
-            <img src="Imagens A3M\Premissões Seleção.png">
+            <img src="Imagens A3M\Imagens Index\Premissões Seleção.png">
         </div>
         
         <div>
-            <h3>
+            <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="EditarPermissao">
                 EDITANDO UM GRUPO DE PERMISSÃO
-            </h3>
-                <p>
+            </h4>
+                <p style="font-size:large;">
                     Caso você tenha criado um Grupo de permissões e deseje alterar o nome, basta selecionar o grupo e clicar em: 
-                     <img src="Imagens A3M\Alterar Descrição.png" class = "Permissão"> </img>
-                 <p>
+                     <img src="Imagens A3M\Imagens Index\Alterar Descrição.png" class = "Permissão"> </img>
+                 <p style="font-size:large;">
                      Caso queira adicionar permissões de tela a um grupo, basta acessá-lo e selecionar as telas que deseja adicionar ou remover do grupo de permissões. 
                  </p> 
              </p>
         </div>
         
         <div class="Novo Usuário">
-            <p>
-                <h3>
-                    Configuração dos usuários do A3M System
-                </h3>
-            </p>
-                    <p>
-                        Com os grupos de permissão criados, fica mais fácil de criar um usuário e já atribuir as permissões que este poderá ter de telas do BI.
-                    </p>
+            <h3 style="font-weight: bolder;" id="ConfiguracaoUsuario">
+                Configuração dos usuários do A3M System
+            </h3>
+                <p style="font-size:large;">
+                    Com os grupos de permissão criados, fica mais fácil de criar um usuário e já atribuir as permissões que este poderá ter de telas do BI.
+                </p>
         
             <div class = "User"> 
                 <table>
                     <tr>
-                        <h4>
+                        <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="CriandoNovoUsuario">
                             CRIANDO UM NOVO USUÁRIO
                         </h4>
                             <div>
                                 Todos os campos são obrigatórios: Nome, usuário, Grupo (pelo menos um), E-mail e senha. Neste primeiro momento, caso o usuário tenha mais de um grupo de permissão, basta adicionar um deles. Com os dados inseridos, basta clicar em Cadastrar.
                             </div>                       
-                            <p>
-                                <img src="Imagens A3M\Novo Usuário.png"/>
+                            <p style="font-size:large;">
+                                <img src="Imagens A3M\Imagens Index\Novo Usuário.png"/>
                             </p>
                     </tr>
                 </table>
@@ -187,39 +227,44 @@
         </div>
         
         <div>
-            <p>
-                <h4>
+            <p style="font-size:large;">
+                <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="MaisdeUmGrupo">
                     ADICIONANDO MAIS DE UM GRUPO DE PERMISSÃO
                 </h4>
-                    <p>
+                    <p style="font-size:large;">
                      Para adicionar mais de um Grupo de Permissão ao usuário, você precisa então acessar o respectivo usuário e no campo Outros Grupos adicionar todos Grupos de Permissão que ele poderá ter acesso. </p>
-                <img src="Imagens A3M\Mais de um grupo de permissões.png">
+                <img src="Imagens A3M\Imagens Index\Mais de um grupo de permissões.png">
                 </img>
         
-                <p>
-                    <h4>
+                <p style="font-size:large;">
+                    <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="EditandoUmUsuario">
                         EDITANDO UM USUÁRIO
                     </h4>        
-                <p>
-                    Ao Editar um usuário, você ainda poderá desativar ele, através do botão "Alterar Senha", caso <img src="Imagens A3M\Ativo S.png"> necessário, ou <img src = "Imagens A3M\Alterar senha.png"> ainda, Excluir.
-                <p>
-                    <img src="Imagens A3M\Excluir.png">
-                <p>
-                    <h4>
+                <p style="font-size:large;">
+                    Ao Editar um usuário, você ainda poderá desativar ele, através do botão "Alterar Senha", caso <img src="Imagens A3M\Imagens Index\Ativo S.png"> necessário, ou <img src = "Imagens A3M\Imagens Index\Alterar senha.png"> ainda, Excluir.
+                <p style="font-size:large;">
+                    <img src="Imagens A3M\Imagens Index\Excluir.png">
+                <p style="font-size:large;">
+                    <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="EditandoSeu">
                         EDITANDO O SEU USUÁRIO
                     </h4>
-                <p>
+                <p style="font-size:large;">
                     Com a tela logada, no canto superior direito, você irá conseguir alterar sua foto e também alterar a sua Senha.
-                <p>
-                    <img src="Imagens A3M\Alterar Senha Própria.png">
-            </p>
+                <p style="font-size:large;">
+                    <img src="Imagens A3M\Imagens Index\Alterar Senha Própria.png">
+                </p>
+
+                <div id="vdCadastroUsuario" style="padding-left: 30%;">
+                    <h2>Vídeo | Cadastro de Usuários</h2>
+                    <iframe width="680" height="390" src="https://www.youtube.com/embed/oIZj8sr8yTg" title="Cadastro de Usuário" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
         </div>
-        
+
         <div>
-            <h2>
+            <h2 style="font-weight: bolder; margin-left: 30%; margin-top: 5%;" class="docs-heading;" id="ControleDeFuncionarios" >
                 CONTROLE DE FUNCIONÁRIOS - MENU RH
             </h2>
-                <p>
+                <p style="font-size:large;">
                     O sistema de Controle de Funcionários - RH da A3M System é de fácil acesso e muito intuitivo. 
                     O Painel de cadastros para o RH é composto por duas seções principais:
                     <div style="margin-left: 20px;">
@@ -232,50 +277,49 @@
                         </li>
 
                     </div>
-                    <p>Além destas duas principais, é importante dar uma atenção para a seção Cadastro de Endereço. Mas primeiro, vamos tratar da parte de RH - Cadastros.</p>
+                    <p style="font-size:large;">Além destas duas principais, é importante dar uma atenção para a seção Cadastro de Endereço. Mas primeiro, vamos tratar da parte de RH - Cadastros.</p>
                 
-                <p>
-                    <h4>
-                        RH - CADASTROS
-                    </h4>
-                   <p> Para acessar, basta clicar no menu Configuração > RH - Cadastros > o menu que quiser configurar </p>
-                          <img src="Imagens A3M\RH - CADASTROS.png">
-                        <p>
-                        Nesta parte do sistema você poderá configurar tudo que deverá estar previsto dentro do
-                        sistema na hora de cadastrar um novo funcionário, ou seja, todas as possibilidades de cargos,
-                        setores, motivos de desligamento, empresas, escolaridade, tipo de vínculo e diretoria a qual o
-                        funcionário pertence. 
+                <p style="font-size:large;">
+                    <h3 style="font-weight: bolder;" id="RHCadastros">
+                        RH CADASTROS
+                    </h3>
+                        <p style="font-size:large;"> Para acessar, basta clicar no menu Configuração > RH - Cadastros > o menu que quiser configurar </p>
+                          <img src="Imagens A3M\Imagens Index\RH - CADASTROS.png">
+                        <p style="font-size:large;">
+                            Nesta parte do sistema você poderá configurar tudo que deverá estar previsto dentro do
+                            sistema na hora de cadastrar um novo funcionário, ou seja, todas as possibilidades de cargos,
+                            setores, motivos de desligamento, empresas, escolaridade, tipo de vínculo e diretoria a qual o
+                            funcionário pertence. 
                         </p>
-                        <p>
+                        <p style="font-size:large;">
                             Adicionando opções em qualquer um dos campos do RH - Cadastros 
                         </p>
         
-                        <p>
-                        Para adicionar alguma opção em qualquer um dos campos, basta clicar no ícone de <span class="fa fa-plus-circle" style="font-size:30px; color:#000e4a;"::before></span> no canto inferior direito da página. 
+                        <p style="font-size:large;">
+                            Para adicionar alguma opção em qualquer um dos campos, basta clicar no ícone de <span class="fa fa-plus-circle" style="font-size:30px; color:#000e4a;"::before></span> no canto inferior direito da página. 
+                        </p>
                 </p>
-                
-        
         </div>
         
         <div>
-            <h4>
+            <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="RhCadEditExc"> 
                 CADASTRANDO, EDITANDO OU EXCLUINDO OPÇÕES
             </h4>
-                    <img src="Imagens A3M\CADASTRANDO, EDITANDO OU EXCLUINDO OPÇÕES.png"> </img>
-                        <p>
+                    <img src="Imagens A3M\Imagens Index\CADASTRANDO, EDITANDO OU EXCLUINDO OPÇÕES.png"> </img>
+                        <p style="font-size:large;">
                             Cadastro de Cargos solicita apenas a descrição do cargo e alguma observação adicional que você queira contemplar. Para inativar algum Cargo, basta clicar no cargo criado e ele irá exibir um botão que estará marcado como ativo. basta clicar em cima para desativar, e para finalizar, clicar em Editar:
-                        </p> <img src="Imagens A3M\Ativo S.png"> </img>
-                        <p>
+                        </p> <img src="Imagens A3M\Imagens Index\Ativo S.png"> </img>
+                        <p style="font-size:large;">
                             Caso o cargo tenha sido criado de forma errada, também é possível excluí-lo.
-                        </p> <img src="Imagens A3M\Excluir.png"> </img>
-                        <p>
+                        </p> <img src="Imagens A3M\Imagens Index\Excluir.png"> </img>
+                        <p style="font-size:large;">
                             Estes caminhos de Criação, Edição e Remoção servem para todos os submenus do RH 
                             <ul> - Cadastros. </ul>
                         </p>
-                    <h5>
+                    <h4 style="font-weight: bolder;" id="CadastroEndereço">
                         CADASTRO DE ENDEREÇO
-                    </h5>
-                    <p>
+                    </h4>
+                    <p style="font-size:large;">
                         Após realizar os cadastros mínimos para a vinculação com um funcionário, é importanteatentar para um local: Cadastro de Endereço.
                     </p>
                         <div style="margin-left: 20px;">
@@ -283,111 +327,174 @@
                                 Esta seção é importante no caso de a empresa/funcionário terem residência em um CEP que seja único para a cidade. Quando o município não tem CEP por logradouro, o CEP dito genérico (seguido do número -000) é usado, por exemplo: Capão da Canoa, Rio Grande do Sul, tem o CEP 95555-000.
                             </li>
                         </div>
-                    <p>
+                    <p style="font-size:large;">
                         Desta forma será necessário cadastrar um endereço previamente com as seguintes informações: CEP, UF, Cidade, Bairro e Logradouro (apenas o nome, pois o número do endereço será preenchido diretamente na criação do funcionário).
                     </p>
-                </p>
+                    
+                    <div id="vdCadastroEndereco" style="padding-left: 30%;">
+                       <h2>Vídeo | Cadastro de Endereço</h2> 
+                       <iframe width="680" height="390" src="https://youtu.be/embed/w57dd-30qO8" title="Cadastro de Endereço" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
         </div>
-        
+
+    <div id= "RhImagens" style="padding-top: 4%"> 
         <div>
+            <h3 style="font-weight: bolder;" id="RhConfig" style="padding-top: 20px; border-top:10%;">
+                RH CONFIGURAÇÕES
+            </h3>
         
-            <h4>
-                RH
-            </h4>
-        
-            <p>
+            <p style="font-size:large;">
                 O menu RH é composto por duas seções: a seção Funcionários e a seção Férias e Folgas
             </p>
-            <h4>
+            <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="Funcionarios">
                 FUNCIONÁRIOS
             </h4>
             
             O cadastro de funcionários tem campos obrigatórios a serem preenchidos. Estes campos estão sinalizados por um *. Ao cadastrar um Novo Funcionário, serão 3 partes a serem preenchidas:
         
-            <p>
-                <u>
+            <p style="font-size:large;">
+                <u id="DadosPessoais">
                     DADOS PESSOAIS
                 </u>
-            </p> <img src="Imagens A3M\Funcionarios.png" ></img>
+            </p> <img src="Imagens A3M\Imagens Index\Funcionarios.png" id="DadosPessoaisIMG" style="max-height: 400px;" ></img>
         
-            <p>
-                <u>
+            <p style="font-size:large;">
+                <u id="EnderecoRH">
                     ENDEREÇO
                 </u> 
                 
-                <p> 
+                <p style="font-size:large;"> 
                     Este é o momento em que será importante ter cadastrado o Endereço prévio (em caso de CEP genérico):
-                </p> <img src="Imagens A3M\Endereço.png"> </img>
+                </p> <img src="Imagens A3M\Imagens Index\Endereço.png"> </img>
         
-                <p>
-                    <u>
+                <p style="font-size:large;">
+                    <u id="Atribuicao">
                         ATRIBUIÇÃO
                     </u>
-                   <p>
+                   <p style="font-size:large;">
                         A terceira página de informações é a parte que solicita as informações de Setor, Cargo, Vínculo, Base Horas, Empresa e a Diretoria da qual o funcionário está alocado (caso a empresa tenha essa divisão). Na sequência, você precisará colocar Admissão, Term. Experiência 1 e 2, e o Salário do funcionário. Caso seja um cliente já desligado, podes marcar a opção, cadastrar a data de desligamento e incluir o Motivo de Desligamento.
-                    </p> <img src="Imagens A3M\Atribuições.png" alt="">
+                    </p> <img src="Imagens A3M\Imagens Index\Atribuições.png" alt="">
                 </p>
         
-                    <p>
-                        <h4>
+                    <p style="font-size:large;">
+                        <h4 style="font-weight: bolder;" style="font-weight: bolder;" id="FeriasFolgas">
                             FÉRIAS E FOLGAS
                         </h4>
         
-                       <p>
+                       <p style="font-size:large;">
                             A seção de Férias e Folgas permite a alocação de Férias, Folgas e a criação de Reserva de Férias.
-                        </p> <img src="Imagens A3M\Atribuições.png" alt="">
+                        </p> <img src="Imagens A3M\Imagens Index\Atribuições.png" alt="">
                         
-                        <p> 
-                            <u>
+                        <p style="font-size:large;"> 
+                            <u id="Ferias">
                                 FÉRIAS
                             </u>
                         </p>
         
-                        <p>
+                        <p style="font-size:large;">
                             Para adicionar novas Férias, basta selecionar o Funcionário, marcar na opção Tipo: “Férias”, colocar a data de início e término e, caso desejar, uma observação.
-                        </p> <img src="Imagens A3M\Adc novo.png" alt="">
-                        <p>
-                            <u>
+                        </p> <img src="Imagens A3M\Imagens Index\Adc novo.png" alt="">
+                        <p style="font-size:large;">
+                            <u id="Folgas">
                                 FOLGAS
                             </u>
                         </p>
-                        <p>
+                        <p style="font-size:large;">
                             O cadastro de Folgas funciona do mesmo jeito que o Cadastro de Férias.
                         </p>
-                        <p>
-                            <u>
+                        <p style="font-size:large;">
+                            <u id="ReservaFerias">
                                 RESERVA DE FÉRIAS
                             </u>
-                            <p>
+                            <p style="font-size:large;">
                                 A seção de Reserva de Férias serve para que cada funcionário possa escolher dentre as possibilidades/períodos disponíveis. A criação de um período de férias é simples, basta selecionar o setor e confirmar o período que este setor poderá tirar férias.
-                            </p> <img src="Imagens A3M\Nova Reserva.png" alt="">
-                            <p>
+                            </p> <img src="Imagens A3M\Imagens Index\Nova Reserva.png" alt="">
+                            <p style="font-size:large;">
                                 Após a criação do período de reserva de férias, você poderá acessar a reserva e alocar os interessados naquele período selecionado. Após a definição de quem irá tirar as férias naquele período, basta marcar no campo funcionário quem será selecionado e o período de reserva de férias irá sumir, sendo então criado no campo Férias as Férias do funcionário.
-                            </p> <img src="Imagens A3M\Realizar Alteração func.png" alt="">
+                            </p> <img src="Imagens A3M\Imagens Index\Realizar Alteração func.png" alt="">
                         </p>
                     </p>
                 </p>
             </p>
         </div>
-        
-        <div>
-        
-            Pronto!
-        
-           <p>
-            Você chegou ao fim do Manual de utilização do A3M System.
-           </p> 
-            
-          <p>
-            Qualquer dúvida, favor contatar o seu Analista.
-          </p> 
-        
-        </div>
-        
-            </div>
-            
-        </div>
     </div>
+        
+    <div>
+        
+        Pronto!
+        
+        <p style="font-size:large;">
+            Você chegou ao fim do Manual de utilização do A3M System.
+        </p> 
+            
+        <p style="font-size:large;">
+            Qualquer dúvida, favor contatar o seu Analista.
+        </p> 
+        
+    </div>
+        
+</div>
+
+
+
+<!-- <script>
+
+UIkit.offcanvas(
+    function(){
+        ('a[href^="#"]').querySelector(function(){
+            var target = UIkit.offcanvas(this).attr('href');
+                UIkit.offcanvas('html, body');
+            return false;
+        });
+    }
+);
+
+</script> -->
+
+<!-- <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player', {
+          height: '360',
+          width: '640',
+          videoId: 'M7lc1UVf-VE',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+      function onPlayerReady(event) {
+        event.target.playVideo();
+      }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+</script> -->
+
+
 </body>
 
 
