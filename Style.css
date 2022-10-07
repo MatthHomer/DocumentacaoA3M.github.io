@@ -20,3 +20,7 @@ p {
     height: 1px;
     width: 1px;
 }
+
+.uk-flex{
+    background-color: red;
+}
